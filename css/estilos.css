@@ -78,12 +78,12 @@ p
     border: 20px solid #03d8fd;
 }
 
-.seccion:hover > .fondo
+.seccion:hover .fondo
 {
     transform: scale(1.25);
 }
 
-.seccion:hover > .articulo
+.seccion:hover .articulo
 {
     opacity: 1;
     transform: rotate(0deg);
