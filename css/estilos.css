@@ -1,0 +1,91 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span
+{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+h1
+{
+    font-size: 48px;
+    font-weight: 600;
+    color:#03d8fd;
+    margin-bottom: 20px;
+}
+
+p
+{
+    margin-bottom: 20px;
+}
+
+.seccion
+{
+    height: 100vh;
+    width: 100vw;
+    /* background: url('../img/reactjs.jpg') center ;
+    background-size: cover; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease;
+    border: 0px solid black;
+    overflow: hidden;
+}
+
+.fondo
+{
+    background: url('../img/reactjs.jpg') center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    transition: all .2s ease;
+    position: relative;
+}
+
+
+.articulo
+{
+    background: white;
+    border-radius: 20px;
+    padding:40px;
+    width: 400px;
+    height:350px;
+    transition: all .4s ease;
+    opacity: 0;
+    transform: rotate(20deg);
+    position: absolute;
+}
+
+.link
+{
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: right;
+    display: block;
+    color: #2a6aaf;
+}
+
+.seccion:hover
+{
+    border: 20px solid #03d8fd;
+}
+
+.seccion:hover > .fondo
+{
+    transform: scale(1.25);
+}
+
+.seccion:hover > .articulo
+{
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
